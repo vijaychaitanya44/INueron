@@ -28,6 +28,7 @@ public class Calc {
 	public void mul(int a, int b) {
 		int result = a*b;
 		System.out.println("Multiple is: "+result);
+		System.out.println(+a+"*"+b+"="+ a*b);
 	}
 	
 	public void div(int a, int b) {
