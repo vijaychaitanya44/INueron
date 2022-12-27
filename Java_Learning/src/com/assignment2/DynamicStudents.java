@@ -14,14 +14,16 @@ public class DynamicStudents {
 
 		int students = sc.nextInt();
 		String stu[] = new String[students];
-
+		sc.nextLine();
 		for (int i = 0; i < students; i++) {
 
 			System.out.println("Please enter  name: ");
-			String sName = sc.next();
+			
+			String sName = sc.nextLine();
 
 			System.out.println("Please enter email: ");
-			String sEmail = sc.next();
+			
+			String sEmail = sc.nextLine();
 
 			stu[i] = sName + "\n" + sEmail;
 
