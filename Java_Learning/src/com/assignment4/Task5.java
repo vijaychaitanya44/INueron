@@ -33,6 +33,8 @@ public class Task5 {
 		System.out.println(multiList);
 
 		System.out.println(multiList.size());
+		
+		System.out.println(multiList.get(1).get(2));
 	}
 
 }

@@ -1,12 +1,16 @@
 package com.day4;
 
+import java.util.Scanner;
+
 public class SwitchDemo {
 
 	public static void main(String[] args) {
 
-		int day = 6;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter day number:");
+		int dayNum = sc.nextInt();
 
-		switch (day) {
+		switch (dayNum) {
 		case 1:
 			System.out.println("Monday");
 			break;
@@ -28,6 +32,7 @@ public class SwitchDemo {
 		case 7:
 			System.out.println("Sunday");
 			break;
+
 		}
 
 	}
