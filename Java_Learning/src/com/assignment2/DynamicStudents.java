@@ -1,5 +1,6 @@
 package com.assignment2;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class DynamicStudents {
@@ -9,7 +10,8 @@ public class DynamicStudents {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-
+		
+try {
 		System.out.println("Please enter number of students");
 
 		int students = sc.nextInt();
@@ -35,5 +37,10 @@ public class DynamicStudents {
 
 		sc.close();
 	}
-
+	
+	catch(InputMismatchException e) {
+		System.out.println("Please enter proper format: "+e.getMessage());
+		
+	}
+}
 }
