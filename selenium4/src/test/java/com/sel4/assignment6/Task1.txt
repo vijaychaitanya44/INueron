@@ -1,0 +1,33 @@
+For Username:
+Xpaths
+//input[@name='username']
+//input[@placeholder='Username']
+//input[@name='password']//preceding::input[1]
+
+
+CSS
+input[name='username']
+[placeholder$='username']
+[name*='username']
+
+For Password:
+Xpaths
+//input[@name='username']//following::input[1]
+//input[@type='password']
+//*[contains(@placeholder,'password')]
+
+CSS
+input[type='password']
+[name^='password']
+[placeholder*='password']
+
+For Login button:
+Xpaths
+//input[@name='password']//following::button[1]
+//button[(normalize-space()='Login')]
+//button[@type='submit']'
+
+CSS
+[type='submit']
+button[class$='login-button']
+button[type*='submit']

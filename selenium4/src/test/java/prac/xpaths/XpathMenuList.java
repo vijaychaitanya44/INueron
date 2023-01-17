@@ -21,8 +21,11 @@ public class XpathMenuList {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 		driver.get("https://opensource-demo.orangehrmlive.com/");
-		driver.findElement(By.name("username")).clear();
-		driver.findElement(By.name("username")).sendKeys("Admin");
+		//driver.findElement(By.name("username")).clear();
+		
+		//driver.findElement(By.cssSelector("[placeholder$='Username']")).clear();
+		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
+		//driver.findElement(By.name("username")).sendKeys("Admin");
 		driver.findElement(By.name("password")).clear();
 		driver.findElement(By.name("password")).sendKeys("admin123");
 
