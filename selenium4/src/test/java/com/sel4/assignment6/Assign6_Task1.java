@@ -22,15 +22,15 @@ public class Assign6_Task1 {
 		driver.findElement(By.xpath("//input[@name='password']//preceding::input[1]")).sendKeys("Admin");
 		System.out.println("1: //input[@name='password']//preceding::input[1])");
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
-		System.out.println("2: //input[contains(@placeholder,'Username')]");
+		System.out.println("2: //input[@placeholder='Username']");
 		driver.findElement(By.xpath("//*[contains(@name,'username')]")).sendKeys("Admin");
 		System.out.println("3: //*[contains(@name,'username')]");
 		
 		System.out.println("UserName by CSS: ");
 		driver.findElement(By.cssSelector("input[name='username']")).sendKeys("Admin");
 		System.out.println("1: input[name='username']");
-		driver.findElement(By.cssSelector("[placeholder$='username']")).sendKeys("Admin");
-		System.out.println("2: [placeholder$='username']");
+		driver.findElement(By.cssSelector("[placeholder$='Username']")).sendKeys("Admin");
+		System.out.println("2: [placeholder$='Username']");
 		driver.findElement(By.cssSelector("[name*='username']")).sendKeys("Admin");
 		System.out.println("3: [name*='username']");
 		
@@ -39,16 +39,16 @@ public class Assign6_Task1 {
 		System.out.println("1: //input[@name='username']//following::input[1]");
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("admin123");
 		System.out.println("2: //input[@type='password']");
-		driver.findElement(By.xpath("//*[contains(@placeholder,'password')]")).sendKeys("admin123");
-		System.out.println("3: //*[contains(@placeholder,'password')]");
+		driver.findElement(By.xpath("//*[contains(@placeholder,'Password')]")).sendKeys("admin123");
+		System.out.println("3: //*[contains(@placeholder,'Password')]");
 		
 		System.out.println("Password by CSS: ");
 		driver.findElement(By.cssSelector("input[type='password']")).sendKeys("admin123");
 		System.out.println("1: input[type='password']");
 		driver.findElement(By.cssSelector("[name^='password']")).sendKeys("admin123");
 		System.out.println("2: [name^='password']");
-		driver.findElement(By.cssSelector("[placeholder*='password']")).sendKeys("admin123");
-		System.out.println("3: [placeholder*='password']");
+		driver.findElement(By.cssSelector("[placeholder*='Password']")).sendKeys("admin123");
+		System.out.println("3: [placeholder*='Password']");
 		
 		System.out.println("Login clicks by Xpath:");
 		driver.findElement(By.xpath("//input[@name='password']//following::button[1]")).click();
