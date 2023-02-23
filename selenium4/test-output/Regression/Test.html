@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 13 01:15:28 IST 2023</td>
+<td>Started on:</td><td>Mon Feb 13 01:23:14 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (88 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29640 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,54 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='jan21TestNg.SoftAssertDemo.test2()'><b>test2</b><br>Test class: jan21TestNg.SoftAssertDemo<br/>
-<a href="#Output-258535644" onClick='toggleBox("Output-258535644", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-258535644" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-258535644">
-Test case 2 first line<br/>
-Test case 2 second line<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at jan21TestNg.SoftAssertDemo.test2(SoftAssertDemo.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+<td title='seleniumGrid.AssetDemo.test5()'><b>test5</b><br>Test class: seleniumGrid.AssetDemo</td>
+<td><div><pre>java.lang.AssertionError: null
+	at seleniumGrid.AssetDemo.test5(AssetDemo.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace258535644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace258535644'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at jan21TestNg.SoftAssertDemo.test2(SoftAssertDemo.java:32)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865859824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1865859824'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at seleniumGrid.AssetDemo.test5(AssetDemo.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -154,57 +115,21 @@ Test case 2 second line<br/>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>jan21TestNg.SoftAssertDemo@47e2e487</td></tr>
+<td>seleniumGrid.AssetDemo@7d4f9aae</td></tr>
 <tr>
-<td title='jan21TestNg.SoftAssertDemo.test1()'><b>test1</b><br>Test class: jan21TestNg.SoftAssertDemo<br/>
-<a href="#Output-1304589447" onClick='toggleBox("Output-1304589447", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1304589447" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1304589447">
-Test line 1 executed<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at jan21TestNg.SoftAssertDemo.test1(SoftAssertDemo.java:16)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+<td title='seleniumGrid.AssetDemo.test3()'><b>test3</b><br>Test class: seleniumGrid.AssetDemo</td>
+<td><div><pre>java.lang.AssertionError: expected [Selenium for automation] but found [Selenium is for automation ]
+	at seleniumGrid.AssetDemo.test3(AssetDemo.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1304589447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1304589447'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace757708014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace757708014'><pre>java.lang.AssertionError: expected [Selenium for automation] but found [Selenium is for automation ]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at jan21TestNg.SoftAssertDemo.test1(SoftAssertDemo.java:16)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at seleniumGrid.AssetDemo.test3(AssetDemo.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -235,7 +160,144 @@ Test line 1 executed<br/>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>jan21TestNg.SoftAssertDemo@47e2e487</td></tr>
+<td>seleniumGrid.AssetDemo@7d4f9aae</td></tr>
+<tr>
+<td title='seleniumGrid.AssetDemo.test6()'><b>test6</b><br>Test class: seleniumGrid.AssetDemo</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at seleniumGrid.AssetDemo.test6(AssetDemo.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace304354378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace304354378'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at org.testng.Assert.assertFalse(Assert.java:88)
+	at seleniumGrid.AssetDemo.test6(AssetDemo.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>seleniumGrid.AssetDemo@7d4f9aae</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumGrid.AssetDemo.test2()'><b>test2</b><br>Test class: seleniumGrid.AssetDemo</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.AssetDemo@7d4f9aae</td></tr>
+<tr>
+<td title='seleniumGrid.MyTestNG2.makePayment()'><b>makePayment</b><br>Test class: seleniumGrid.MyTestNG2</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.MyTestNG2@2e3967ea</td></tr>
+<tr>
+<td title='seleniumGrid.MyTestNG2.login()'><b>login</b><br>Test class: seleniumGrid.MyTestNG2</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.MyTestNG2@2e3967ea</td></tr>
+<tr>
+<td title='seleniumGrid.MyTestNG.test3()'><b>test3</b><br>Test class: seleniumGrid.MyTestNG<br>Test method: THird test3</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.MyTestNG@5d534f5d</td></tr>
+<tr>
+<td title='seleniumGrid.MyTestNG.test1()'><b>test1</b><br>Test class: seleniumGrid.MyTestNG<br>Test method: First test1</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.MyTestNG@5d534f5d</td></tr>
+<tr>
+<td title='seleniumGrid.MyTestNG2.createAccount()'><b>createAccount</b><br>Test class: seleniumGrid.MyTestNG2</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.MyTestNG2@2e3967ea</td></tr>
+<tr>
+<td title='seleniumGrid.SeleniumWithTestNG.startBrowser()'><b>startBrowser</b><br>Test class: seleniumGrid.SeleniumWithTestNG</td>
+<td></td>
+<td>3</td>
+<td>seleniumGrid.SeleniumWithTestNG@576d5deb</td></tr>
+<tr>
+<td title='seleniumGrid.MyTestNG.test2()'><b>test2</b><br>Test class: seleniumGrid.MyTestNG<br>Test method: Second test2</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.MyTestNG@5d534f5d</td></tr>
+<tr>
+<td title='seleniumGrid.SeleniumWithTestNG.verifyURL()'><b>verifyURL</b><br>Test class: seleniumGrid.SeleniumWithTestNG</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.SeleniumWithTestNG@576d5deb</td></tr>
+<tr>
+<td title='seleniumGrid.SeleniumWithTestNG.verifyFooterCount()'><b>verifyFooterCount</b><br>Test class: seleniumGrid.SeleniumWithTestNG</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.SeleniumWithTestNG@576d5deb</td></tr>
+<tr>
+<td title='seleniumGrid.AssetDemo.test4()'><b>test4</b><br>Test class: seleniumGrid.AssetDemo</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.AssetDemo@7d4f9aae</td></tr>
+<tr>
+<td title='seleniumGrid.SeleniumWithTestNG.verfiyLogoutFromApplication()'><b>verfiyLogoutFromApplication</b><br>Test class: seleniumGrid.SeleniumWithTestNG</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.SeleniumWithTestNG@576d5deb</td></tr>
+<tr>
+<td title='seleniumGrid.SeleniumWithTestNG.verifyTitle()'><b>verifyTitle</b><br>Test class: seleniumGrid.SeleniumWithTestNG</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.SeleniumWithTestNG@576d5deb</td></tr>
+<tr>
+<td title='seleniumGrid.MyTestNG2.logOut()'><b>logOut</b><br>Test class: seleniumGrid.MyTestNG2</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.MyTestNG2@2e3967ea</td></tr>
+<tr>
+<td title='seleniumGrid.AssetDemo.test1()'><b>test1</b><br>Test class: seleniumGrid.AssetDemo</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.AssetDemo@7d4f9aae</td></tr>
+<tr>
+<td title='seleniumGrid.SeleniumWithTestNG.verifyLogIntoApplication()'><b>verifyLogIntoApplication</b><br>Test class: seleniumGrid.SeleniumWithTestNG</td>
+<td></td>
+<td>25</td>
+<td>seleniumGrid.SeleniumWithTestNG@576d5deb</td></tr>
+<tr>
+<td title='seleniumGrid.SeleniumWithTestNG.closeBrowser()'><b>closeBrowser</b><br>Test class: seleniumGrid.SeleniumWithTestNG</td>
+<td></td>
+<td>0</td>
+<td>seleniumGrid.SeleniumWithTestNG@576d5deb</td></tr>
 </table><p>
 </body>
 </html>

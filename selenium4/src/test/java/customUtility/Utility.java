@@ -13,9 +13,37 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 
 public class Utility {
+	
+	
+	public static WebDriver startBrowser(String browser, String URL) {
+		
+		
+		
+		return null;
+		
+	}
+
+	public static void clickElement(WebDriver driver, By locator) {
+
+		try {
+			driver.findElement(locator).click();
+		} catch (Exception e) {
+			try {
+				System.out.println("clicking using actions class");
+				Actions act = new Actions(driver);
+				act.moveToElement(driver.findElement(locator)).click().build().perform();
+			} catch (Exception e2) {
+				System.out.println("clicking using actions Javascript executor");
+
+				JavascriptExecutor jse = (JavascriptExecutor) driver;
+				jse.executeScript("arguments[0].click", driver.findElement(locator));
+			}
+		}
+	}
 
 	public static WebElement highLightElement(WebDriver driver, WebElement element) {
 
@@ -29,9 +57,9 @@ public class Utility {
 		return element;
 
 	}
-	
+
 	public static WebElement highLightElement(WebDriver driver, By locator) {
-		
+
 		WebElement element = driver.findElement(locator);
 
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -44,7 +72,6 @@ public class Utility {
 		return element;
 
 	}
-
 
 	public static Alert waitForAlert(WebDriver driver) {
 

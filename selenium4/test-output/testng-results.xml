@@ -1,31 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="20" passed="17" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-08T00:15:22 IST" name="Default suite" finished-at="2023-02-08T00:15:25 IST" duration-ms="2905">
+  <suite started-at="2023-02-13T01:23:14 IST" name="Regression" finished-at="2023-02-13T01:23:43 IST" duration-ms="29640">
     <groups>
     </groups>
-    <test started-at="2023-02-08T00:15:22 IST" name="Default test" finished-at="2023-02-08T00:15:25 IST" duration-ms="2905">
-      <class name="seleniumGrid.SeleniumWithTestNG">
-        <test-method signature="startBrowser()[pri:1, instance:seleniumGrid.SeleniumWithTestNG@1b11171f]" started-at="2023-02-08T00:15:22 IST" name="startBrowser" finished-at="2023-02-08T00:15:25 IST" duration-ms="2622" status="PASS">
+    <test started-at="2023-02-13T01:23:14 IST" name="Test" finished-at="2023-02-13T01:23:43 IST" duration-ms="29640">
+      <class name="seleniumGrid.MyTestNG2">
+        <test-method signature="makePayment()[pri:0, instance:seleniumGrid.MyTestNG2@2e3967ea]" started-at="2023-02-13T01:23:43 IST" name="makePayment" finished-at="2023-02-13T01:23:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method signature="verifyURL()[pri:2, instance:seleniumGrid.SeleniumWithTestNG@1b11171f]" started-at="2023-02-08T00:15:25 IST" name="verifyURL" finished-at="2023-02-08T00:15:25 IST" duration-ms="15" status="PASS">
+        </test-method> <!-- makePayment -->
+        <test-method signature="login()[pri:1, instance:seleniumGrid.MyTestNG2@2e3967ea]" started-at="2023-02-13T01:23:43 IST" name="login" finished-at="2023-02-13T01:23:43 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyURL -->
-        <test-method signature="verifyTitle()[pri:3, instance:seleniumGrid.SeleniumWithTestNG@1b11171f]" started-at="2023-02-08T00:15:25 IST" name="verifyTitle" finished-at="2023-02-08T00:15:25 IST" duration-ms="15" status="FAIL">
+        </test-method> <!-- login -->
+        <test-method signature="createAccount()[pri:2, instance:seleniumGrid.MyTestNG2@2e3967ea]" started-at="2023-02-13T01:23:43 IST" name="createAccount" finished-at="2023-02-13T01:23:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method signature="logOut()[pri:4, instance:seleniumGrid.MyTestNG2@2e3967ea]" started-at="2023-02-13T01:23:43 IST" name="logOut" finished-at="2023-02-13T01:23:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+      </class> <!-- seleniumGrid.MyTestNG2 -->
+      <class name="seleniumGrid.AssetDemo">
+        <test-method signature="test1()[pri:0, instance:seleniumGrid.AssetDemo@7d4f9aae]" started-at="2023-02-13T01:23:14 IST" name="test1" finished-at="2023-02-13T01:23:14 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:seleniumGrid.AssetDemo@7d4f9aae]" started-at="2023-02-13T01:23:14 IST" name="test2" finished-at="2023-02-13T01:23:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:seleniumGrid.AssetDemo@7d4f9aae]" started-at="2023-02-13T01:23:14 IST" name="test3" finished-at="2023-02-13T01:23:14 IST" duration-ms="12" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Title Mismatch expected [true] but found [false]]]>
+              <![CDATA[expected [Selenium for automation] but found [Selenium is for automation ]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title Mismatch expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: expected [Selenium for automation] but found [Selenium is for automation ]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at seleniumGrid.SeleniumWithTestNG.verifyTitle(SeleniumWithTestNG.java:34)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at seleniumGrid.AssetDemo.test3(AssetDemo.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,12 +80,146 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:seleniumGrid.AssetDemo@7d4f9aae]" started-at="2023-02-13T01:23:14 IST" name="test4" finished-at="2023-02-13T01:23:14 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test5()[pri:0, instance:seleniumGrid.AssetDemo@7d4f9aae]" started-at="2023-02-13T01:23:14 IST" name="test5" finished-at="2023-02-13T01:23:14 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at seleniumGrid.AssetDemo.test5(AssetDemo.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method signature="test6()[pri:0, instance:seleniumGrid.AssetDemo@7d4f9aae]" started-at="2023-02-13T01:23:14 IST" name="test6" finished-at="2023-02-13T01:23:14 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertFalse(Assert.java:78)
+at org.testng.Assert.assertFalse(Assert.java:88)
+at seleniumGrid.AssetDemo.test6(AssetDemo.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+      </class> <!-- seleniumGrid.AssetDemo -->
+      <class name="seleniumGrid.SeleniumWithTestNG">
+        <test-method signature="startBrowser()[pri:1, instance:seleniumGrid.SeleniumWithTestNG@576d5deb]" started-at="2023-02-13T01:23:14 IST" name="startBrowser" finished-at="2023-02-13T01:23:17 IST" duration-ms="3241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="verifyURL()[pri:2, instance:seleniumGrid.SeleniumWithTestNG@576d5deb]" started-at="2023-02-13T01:23:17 IST" name="verifyURL" finished-at="2023-02-13T01:23:17 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyURL -->
+        <test-method signature="verifyTitle()[pri:3, instance:seleniumGrid.SeleniumWithTestNG@576d5deb]" started-at="2023-02-13T01:23:17 IST" name="verifyTitle" finished-at="2023-02-13T01:23:17 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="closeBrowser()[pri:4, instance:seleniumGrid.SeleniumWithTestNG@1b11171f]" started-at="2023-02-08T00:15:25 IST" name="closeBrowser" finished-at="2023-02-08T00:15:25 IST" duration-ms="200" status="PASS">
+        <test-method signature="verifyFooterCount()[pri:4, instance:seleniumGrid.SeleniumWithTestNG@576d5deb]" started-at="2023-02-13T01:23:17 IST" name="verifyFooterCount" finished-at="2023-02-13T01:23:17 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterCount -->
+        <test-method signature="verifyLogIntoApplication()[pri:5, instance:seleniumGrid.SeleniumWithTestNG@576d5deb]" started-at="2023-02-13T01:23:17 IST" name="verifyLogIntoApplication" finished-at="2023-02-13T01:23:43 IST" duration-ms="25790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogIntoApplication -->
+        <test-method signature="verfiyLogoutFromApplication()[pri:6, instance:seleniumGrid.SeleniumWithTestNG@576d5deb]" started-at="2023-02-13T01:23:43 IST" name="verfiyLogoutFromApplication" finished-at="2023-02-13T01:23:43 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyLogoutFromApplication -->
+        <test-method signature="closeBrowser()[pri:7, instance:seleniumGrid.SeleniumWithTestNG@576d5deb]" started-at="2023-02-13T01:23:43 IST" name="closeBrowser" finished-at="2023-02-13T01:23:43 IST" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- seleniumGrid.SeleniumWithTestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="seleniumGrid.MyTestNG">
+        <test-method signature="test1()[pri:0, instance:seleniumGrid.MyTestNG@5d534f5d]" started-at="2023-02-13T01:23:43 IST" name="test1" description="First test1" finished-at="2023-02-13T01:23:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:seleniumGrid.MyTestNG@5d534f5d]" started-at="2023-02-13T01:23:43 IST" name="test2" description="Second test2" finished-at="2023-02-13T01:23:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:seleniumGrid.MyTestNG@5d534f5d]" started-at="2023-02-13T01:23:43 IST" name="test3" description="THird test3" finished-at="2023-02-13T01:23:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- seleniumGrid.MyTestNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Regression -->
 </testng-results>
