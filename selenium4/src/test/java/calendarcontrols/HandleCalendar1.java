@@ -16,6 +16,8 @@ public class HandleCalendar1 {
 		
 		driver.findElement(By.id("datepicker")).sendKeys("01/25/2023");
 		
+		
+		
 	}
 
 }

@@ -9,7 +9,7 @@ public class DuplicateStringElement {
 	
 		String[] arry={"Java","Selenium","Java"};
 
-		String ch=arry.toString();
+		//String ch=arry.toString();
 		HashSet<String> hSet=new HashSet<String>();
 		System.out.println("Duplicate String Eelement is");
 

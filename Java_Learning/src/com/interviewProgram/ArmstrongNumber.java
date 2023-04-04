@@ -3,7 +3,7 @@ package com.interviewProgram;
 public class ArmstrongNumber {
 
 	public static void main(String[] args) {
-		int num = 153, rem, result = 0;
+		int num = 371, rem, result = 0;
 		int temp = num;
 		System.out.println(temp);
 

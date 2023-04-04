@@ -6,14 +6,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class HandleCalendar3 {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--remote-allow-origins=*");
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(opt);
+		
+		
+		
+		
 		
 		driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
 		
@@ -23,7 +30,7 @@ public class HandleCalendar3 {
 		
 		
 		for(WebElement ele: dates) {
-			//System.out.println(ele.getText());
+			System.out.println(ele.getText());
 			
 			if(ele.getText().contains("26")) {
 				ele.click();
