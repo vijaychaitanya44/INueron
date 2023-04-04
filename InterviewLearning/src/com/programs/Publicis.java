@@ -24,6 +24,8 @@ public class Publicis {
 		for(int i=0;i<s;i++) {
 			if(key == arr[i]) {
 				System.out.println("True");
+				System.out.println("True");
+				System.out.println("True");
 				break;
 			}
 		}
