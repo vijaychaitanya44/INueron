@@ -17,6 +17,8 @@ public class JavaScriptDemo5 {
 		
 		WebDriver driver  = new ChromeDriver();
 		driver.manage().window().maximize();
+		
+		
 		driver.get("https://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html");
 		
 		Utility.waitForSeconds(3);

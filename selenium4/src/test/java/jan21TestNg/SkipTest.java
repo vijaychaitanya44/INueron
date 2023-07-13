@@ -13,7 +13,7 @@ public class SkipTest {
 		//System.out.println("Succesfully logged in");
 
 	}
-	@Test(dependsOnMethods = "login" )
+	@Test
 	public void logout() {
 		Reporter.log("log out from Application",true);
 	}

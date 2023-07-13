@@ -36,7 +36,7 @@ public class IncognitoExecution2 {
 		
 		System.out.println(driver.getCurrentUrl());
 		
-		driver.quit();
+		//driver.quit();
 		
 	}
 

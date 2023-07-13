@@ -5,7 +5,7 @@ public class StringDemo1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		char ch[] = {'t','o','m'};
-		
+	
 		String s1 = "Java";
 		
 		System.out.println(s1);
@@ -25,6 +25,7 @@ public class StringDemo1 {
 		System.out.println("Lower case: "+s_Lower);
 		
 		String s3 = "Java";
+	
 	}
 
 }

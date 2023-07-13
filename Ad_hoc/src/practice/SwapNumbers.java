@@ -2,20 +2,24 @@ package practice;
 
 public class SwapNumbers {
 
-	void method1() {
+	int  method1() {
 		int a = 10;
 
-		int b = 20;
+		int b = 10;
 		int temp;
 		System.out.println("a is " + a);
 		System.out.println("b is " + b);
 
+		if(a==b) {
+			return 0;
+		}
 		temp = a;
 		a = b;
 		b = temp;
 
 		System.out.println("a is " + a);
 		System.out.println("b is " + b);
+		return a;
 	}
 
 	public static void main(String[] args) {
